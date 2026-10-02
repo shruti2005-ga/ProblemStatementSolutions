@@ -1,0 +1,52 @@
+What are the key architectural components to create a chatbot based on LLM? Please explain the approach on a high-level ?
+ANS=LLM-based chatbot acts like a smart assistant with an open reference library.
+    It takes user input, retrieves relevant facts from a custom document database (if needed),
+    combines everything into a clear prompt, and uses a Large Language Model to generate an accurate answer.
+
+    1.Key Architectural Components
+    .User Interface (UI)
+     The screen where the user chats with the bot.
+
+    .ORCHESTRATION LAYER
+     The "conductor" or code manager that connects all components together.
+
+    .Vector Database
+     Stores domain-specific knowledge (PDFs, docs) as numerical vectors so the bot can search for information
+
+    .Embedding Model
+     Converts human text into numerical mathematical format (vectors) for similarity search.
+
+    .LLM Engine (The Brain)
+    Processes instructions and generates natural language text.
+
+    .Safety
+     Checks incoming and outgoing messages to prevent inappropriate content or factual errors.
+
+
+
+     [ User asks a Question ]
+          │
+          ▼
+┌─────────────────────────────────────────┐
+│ 1. Convert Question to Vector           │  (Using Embedding Model)
+└─────────────────────────────────────────┘
+          │
+          ▼
+┌─────────────────────────────────────────┐
+│ 2. Find Relevant Facts/Docs             │  (Search Vector DB)
+└─────────────────────────────────────────┘
+          │
+          ▼
+┌─────────────────────────────────────────┐
+│ 3. Build Prompt                         │  
+│                                         │   
+└─────────────────────────────────────────┘
+          │
+          ▼
+┌─────────────────────────────────────────┐
+│ 4. Generate Answer                      │  (LLM Engine)
+└─────────────────────────────────────────┘
+          │
+          ▼
+[ Send Response Back to User ]
+

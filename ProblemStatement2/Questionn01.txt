@@ -1,0 +1,24 @@
+Where would you rate yourself on (LLM, Deep Learning, AI, ML)?
+
+ANS=Sure,Below is my honest self-evaluation across LLM, Deep Learning, AI, and Machine Learning, supported by my academic curriculum and hands-on project experience:
+
+Domain name                       Rating
+
+Machine Learning (ML)             Rating A (Independent)
+Artificial Intelligence (AI)      Rating A (Independent)
+Deep Learning (DL)                Rating B (Under Supervision)
+Large Language Models (LLM)       Rating B (Under Supervision)
+
+
+core skills & Practical Capability
+
+ML=Data preprocessing, feature engineering, classification, regression, and clustering using Scikit-Learn, Pandas, 
+   and NumPy. Able to evaluate models, tune hyperparameters, and build pipeline scripts independently.
+AI=Core search algorithms, heuristic optimization, logic systems, and practical AI application development.
+   Ability to design problem-solving frameworks independently.
+DL=Good conceptual understanding of Neural Networks, CNNs, and Transformers. 
+   Can build, fine-tune, and evaluate models using PyTorch/TensorFlow, but prefer architecture guidance for high-complexity models.
+LLM=Hands-on experience with Prompt Engineering, Retrieval-Augmented Generation (RAG) pipelines
+    Capable of deploying functional prototype applications with guidance on production optimization.
+
+
